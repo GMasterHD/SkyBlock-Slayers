@@ -1,0 +1,15 @@
+[
+  {
+    "modid": "skyblockslayers",
+    "name": "SkyBlock Slayers",
+    "description": "SkyBlock Slayers mod counts slayer boss kills and slayer drops.",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://gitlab.com/xxgmasterhdxx/skyblock-slayers-mod",
+    "updateUrl": "",
+    "authorList": ["GMasterHD"],
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
