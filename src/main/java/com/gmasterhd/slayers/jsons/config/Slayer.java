@@ -19,7 +19,7 @@ public class Slayer {
 	public Slayer(String name, String type, String scoreTrigger) {
 		this.name = name;
 		this.type = type;
-		this.chatTrigger = type + " Slayer XP";
+		this.chatTrigger = "Talk to Maddox to claim your " + type + " Slayer XP";
 		this.scoreTrigger = scoreTrigger;
 	}
 }
