@@ -1,4 +1,4 @@
-# SkyBlock Mod (1.0.0)
+# SkyBlock Mod (1.0.2)
 ## Download
 To download the mod, click on the top the "releases" button and download the newest version.  
 The compiled JAR Files are located under "Assets"!
