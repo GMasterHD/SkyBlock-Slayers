@@ -7,7 +7,10 @@ The compiled JAR Files are located under "Assets"
 ### 1.0.0
 - [+] Slayer Drop counter for each type of Slayer
 - [+] Kill Counter for each type of Slayer
-``
+
+### 1.0.1
+- [+] Added more arguments to sbs command
+
 ## Commands
 
     /sbs toggle
