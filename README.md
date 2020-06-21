@@ -1,7 +1,7 @@
 # SkyBlock Mod (1.0.0)
 ## Download
 To download the mod, click on the top the "releases" button and download the newest version.  
-The compiled JAR Files are located under "Assets"
+The compiled JAR Files are located under "Assets"!
 
 ## Changelog
 ### 1.0.0
@@ -10,6 +10,9 @@ The compiled JAR Files are located under "Assets"
 
 ### 1.0.1
 - [+] Added more arguments to sbs command
+
+### 1.0.2
+- [+] Added update checker
 
 ## Commands
 

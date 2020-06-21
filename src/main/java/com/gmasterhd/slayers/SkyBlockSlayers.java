@@ -3,8 +3,10 @@ package com.gmasterhd.slayers;
 import com.gmasterhd.slayers.commands.CommandSBS;
 import com.gmasterhd.slayers.jsons.Config;
 import com.gmasterhd.slayers.jsons.Saves;
+import com.gmasterhd.slayers.listeners.PlayerListener;
 import com.gmasterhd.slayers.listeners.SlayerListener;
 import com.gmasterhd.slayers.listeners.SlayerRenderListener;
+import com.gmasterhd.slayers.utils.AuoUpdater;
 import com.gmasterhd.slayers.utils.PersistentFile;
 import net.minecraftforge.client.ClientCommandHandler;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,8 +29,14 @@ public class SkyBlockSlayers {
 	public static int index_configSelectedSlayer = 2;
 	public static int index_savesSelectedSlayer = 2;
 	
+	public static String configFolder;
+	
+	public static String updateURL = "NONE";
+	
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent e) {
+		configFolder = e.getModConfigurationDirectory().getPath();
+		
 		// Saves config file with predefined values if it not exists
 		config = Config.getPredefinedValues();
 		configFile = new PersistentFile<>(e.getModConfigurationDirectory().getPath() + "/" + MODID + "/config.json", config);
@@ -41,8 +49,11 @@ public class SkyBlockSlayers {
 		saves = savesFile.load(Saves.class);
 		savesFile.save(saves);
 		
+		AuoUpdater.checkForUpdates();
+		
 		MinecraftForge.EVENT_BUS.register(new SlayerListener());
 		MinecraftForge.EVENT_BUS.register(new SlayerRenderListener());
+		MinecraftForge.EVENT_BUS.register(new PlayerListener());
 	}
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent e) {

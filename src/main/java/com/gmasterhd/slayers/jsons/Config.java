@@ -8,6 +8,7 @@ import java.util.List;
 
 public class Config {
 	public List<Slayer> Slayers = new ArrayList<>();
+	public static final int VERSION_ID = 0;
 	
 	public static Config getPredefinedValues() {
 		Config config = new Config();
