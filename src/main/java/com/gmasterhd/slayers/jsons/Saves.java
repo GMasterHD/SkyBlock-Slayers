@@ -7,6 +7,7 @@ import java.util.List;
 
 public class Saves {
 	public List<Slayer> Slayers = new ArrayList<>();
+	public boolean slayerVisible = false;
 	
 	public static Saves getPredefinedValues() {
 		Saves saves = new Saves();

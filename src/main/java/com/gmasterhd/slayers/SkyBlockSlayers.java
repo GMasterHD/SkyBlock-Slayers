@@ -1,6 +1,6 @@
 package com.gmasterhd.slayers;
 
-import com.gmasterhd.slayers.commands.CommandSlayers;
+import com.gmasterhd.slayers.commands.CommandSBS;
 import com.gmasterhd.slayers.jsons.Config;
 import com.gmasterhd.slayers.jsons.Saves;
 import com.gmasterhd.slayers.listeners.SlayerListener;
@@ -49,6 +49,6 @@ public class SkyBlockSlayers {
 	}
 	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent e) {
-		ClientCommandHandler.instance.registerCommand(new CommandSlayers());
+		ClientCommandHandler.instance.registerCommand(new CommandSBS());
 	}
 }
