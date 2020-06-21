@@ -16,7 +16,7 @@ The compiled JAR Files are located under "Assets"
     /sbs reset <slayer>
 > Reset a specific slayer
 
-    /sbs position <x> <y>
+    /sbs <position|pos> <x> <y>
 > Set the position of the slayers menu
 
 ## External Files
