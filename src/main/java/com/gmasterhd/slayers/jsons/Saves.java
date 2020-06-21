@@ -8,6 +8,10 @@ import java.util.List;
 public class Saves {
 	public List<Slayer> Slayers = new ArrayList<>();
 	public boolean slayerVisible = false;
+	public int[] slayerMenuPos = {
+			5,
+			5
+	};
 	
 	public static Saves getPredefinedValues() {
 		Saves saves = new Saves();
@@ -19,5 +23,10 @@ public class Saves {
 		saves.Slayers.add(wolf);
 		
 		return saves;
+	}
+	
+	public void setSlayerMenuPos(int x, int y) {
+		this.slayerMenuPos[0] = x;
+		this.slayerMenuPos[1] = y;
 	}
 }

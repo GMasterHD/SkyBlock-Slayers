@@ -7,7 +7,7 @@ The compiled JAR Files are located under "Assets"
 ### 1.0.0
 - [+] Slayer Drop counter for each type of Slayer
 - [+] Kill Counter for each type of Slayer
-
+``
 ## Commands
 
     /sbs toggle
@@ -15,6 +15,9 @@ The compiled JAR Files are located under "Assets"
 
     /sbs reset <slayer>
 > Reset a specific slayer
+
+    /sbs position <x> <y>
+> Set the position of the slayers menu
 
 ## External Files
 > **Only edit your external files if you know what you are doing!  
